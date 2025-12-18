@@ -29,12 +29,18 @@ using namespace std;
 
 int main()
 {
-  // TODO: Declare an array of 100 integers
-  // Example: int numbers[100];
-
-  // TODO: Initialize the array with values
-  // You can use a loop to fill it with numbers 100 down to 1 (unsorted)
-  // Example: for(int i = 0; i < 100; i++) { numbers[i] = 100 - i; }
+  // An unsorted array of numbers 1-100 for you to sort
+  int numbers[100] = {
+      63, 12, 89, 45, 23, 78, 34, 91, 56, 7,
+      82, 29, 67, 14, 95, 41, 18, 73, 50, 36,
+      98, 5, 61, 27, 84, 48, 10, 75, 32, 69,
+      21, 58, 93, 15, 80, 44, 3, 70, 37, 96,
+      52, 19, 86, 31, 65, 9, 77, 42, 24, 88,
+      54, 1, 71, 39, 94, 25, 81, 47, 13, 68,
+      35, 99, 59, 22, 85, 46, 11, 74, 30, 97,
+      51, 6, 72, 38, 92, 26, 83, 49, 16, 66,
+      33, 100, 57, 20, 87, 43, 8, 76, 40, 62,
+      28, 90, 55, 17, 79, 4, 64, 2, 53, 60};
 
   // TODO: Display the array BEFORE sorting
   cout << "Array before sorting:" << endl;
