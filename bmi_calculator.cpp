@@ -2,8 +2,8 @@
  * CS101 Final Exam - File 2: bmi_calculator.cpp
  * The Tool Test: BMI Calculator
  *
- * Student Name: ________________________
- * Date: ________________________
+ * Student Name: Winston Pat
+ * Date: 12/18/25
  *
  * OBJECTIVE:
  * Create an interactive program that calculates a user's Body Mass Index (BMI).
@@ -40,6 +40,10 @@ int main()
   // TODO: Declare variables for weight, height, and BMI
   // Use 'double' so you can handle decimal values
   // Hint: You'll need three double variables
+    
+    double weight;
+    double height;
+    double bmi;
 
   // TODO: Greet the user and explain what the program does
   cout << "Welcome to the BMI Calculator!" << endl;
@@ -48,16 +52,24 @@ int main()
 
   // TODO: Ask for the user's weight in kilograms
   // Hint: Use cout to ask the question, then cin to store the answer in your weight variable
+    cout << " Please enter your weight in kilos: ";
+    cin >> weight;
 
   // TODO: Ask for the user's height in meters
   // Hint: Same pattern as weight - ask with cout, capture with cin
-
+    cout << " Please enter your height in meters: ";
+    cin >> height;
+    
+    
   // TODO: Calculate the BMI
   // Formula: BMI = weight / (height × height)
   // Hint: Divide weight by height squared. Remember to use * for multiplication in C++
+    bmi = weight / ( height * height );
 
   // TODO: Display the result
   // Hint: Use cout to display a message and the bmi variable
+    cout << endl;
+    cout << " your BMI is: " << bmi << endl;
 
   // BONUS TODO: Add if-else statements to tell the user their BMI category
   // THINK ABOUT:
@@ -71,6 +83,23 @@ int main()
   // } else if(bmi is less than second threshold) {
   //     tell user second category
   // } ... continue for all categories
+    
+    if(bmi < 18.5)
+    {
+        cout << " Category: scrawny " << endl;
+    }
+    else if(bmi < 25)
+    {
+        cout << " Category: normal " << endl;
+    }
+    else if(bmi < 35)
+    {
+        cout << " Category: overweight " << endl;
+    }
+    else
+    {
+        cout << " Category: Fat " << endl;
+    }
 
   cout << "\nThank you for using the BMI Calculator!" << endl;
 
